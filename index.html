@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>our js </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <div class="open">
+    <a href="#modal-01">
+        <img src="https://placehold.jp/24/e3e3e3/666666/260x50.png?text=Open&css=%7B%22border-radius%22%3A%226px%22%2C%22background%22%3A%22%20-webkit-gradient(linear%2C%20left%20top%2C%20left%20bottom%2C%20from(%23e3e3e3)%2C%20to(%23cccccc))%22%7D">
+      </a><hr>
+      <label for="">Your id is here : </label>
+      <label for="" id="demo"></label>
+  </div>
+
+
+
+  <div class="modal-wrapper" id="modal-01">
+    <a href="#!" class="modal-overlay"></a>
+    <div class="modal-window">
+      <div class="modal-content">
+        <input id="numb">
+
+        <button type="button" onclick="myFunction()">Submit</button>
+
+        
+      </div>
+      <a href="#!" class="modal-close">×</a>
+    </div>
+  </div>
+
+<script>
+
+function myFunction() {
+    var x, text;
+  
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+  
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x)) {
+      text = "Input not valid";
+    } else {
+      text = x;
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+</script>
+
+</body>
+</html> 
